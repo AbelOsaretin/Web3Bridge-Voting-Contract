@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_candidateAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_candidateName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_candidtateParty",
+						"type": "string"
+					}
+				],
+				"name": "AddCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ViewCandidate",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "address",
+								"name": "CandidateAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "string",
+								"name": "CandidateName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "CandidateParty",
+								"type": "string"
+							},
+							{
+								"internalType": "address[]",
+								"name": "Voters",
+								"type": "address[]"
+							}
+						],
+						"internalType": "struct Voting.VotingDetails[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "VoteCandidate",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Voting.sol": "Voting"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Voting.sol": {
+			"keccak256": "0x8aae787e943e673efe1b383f9755cb0c7c246b914cdd0b3924bc34f1615cfe73",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc20d988893c27c8705334906640219fdeabdf42bd299da40c4f59d3bca2c764",
+				"dweb:/ipfs/QmXMgGRYQcAHTGRT4VQUxVSi9dmoWDaGbmb2oXtwS56zHB"
+			]
+		}
+	},
+	"version": 1
+}
